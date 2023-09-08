@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+//App.js - main point of entry to frontend. Creating basic markup for the page
+//npx create-react-app todo-list -installing Create React App
+//cd todo-list
+//npm start
 
-function App() {
+import React from 'react';
+import Todo from './components/todo';
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Todo/>
     </div>
   );
 }
-
-export default App;
